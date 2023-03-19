@@ -4,79 +4,69 @@ import 'package:marketplace_flutter/foundations/shadows.dart';
 
 class Category extends StatelessWidget {
   final String text;
-  final AssetImage image;
+  final String imageRoute;
   final Function() onTap;
 
   Category({
     required this.text,
-    required this.image,
+    required this.imageRoute,
     required this.onTap,
   });
 
   final double cardHeight = 250;
-  final double borderRadius = 15;
-  final double fontSize = 25;
+  final double borderRadius = 10;
+  final double fontSize = 23;
+  final double imageOpacity = 0.85;
+  final Color containerColor = AppColors.WHITE;
 
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
     final double cardWidth = screenWidth * 0.35;
 
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(10),
-        width: cardWidth,
-        height: cardHeight,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(borderRadius),
-          color: AppColors.WHITE,
-          boxShadow: [Shadows.categoryShadow],
-        ),
-        child: Stack(
-          alignment: AlignmentDirectional.topCenter,
-          children: <Widget>[
-            Positioned(
-              top: 0,
-              child: Container(
-                // alignment: Alignment.center,
-                // decoration: BoxDecoration(
-                //   image: DecorationImage(
-                //     image: image,
-                //     fit: BoxFit.cover,
-                //     opacity: 0.7,
-                //   ),
-                // ),
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-                child: Text(
-                  text,
-                  style: TextStyle(
-                    color: AppColors.WHITE,
-                    fontSize: fontSize,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 2,
-                    shadows: [Shadows.textShadow],
-                  ),
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 2,
+    return Container(
+      width: cardWidth,
+      height: cardHeight,
+      padding: const EdgeInsets.all(5),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(borderRadius),
+        color: containerColor,
+        boxShadow: [
+          Shadows.categoryShadow,
+        ],
+      ),
+      child: Material(
+        child: Ink(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(borderRadius),
+            image: DecorationImage(
+              image: AssetImage(imageRoute),
+              fit: BoxFit.cover,
+              opacity: imageOpacity,
+            ),
+          ),
+          child: InkWell(
+            splashColor: Colors.grey.withOpacity(0.1),
+            highlightColor: Colors.grey.withOpacity(0.1),
+            onTap: onTap,
+            child: Container(
+              alignment: Alignment.center,
+              margin: const EdgeInsets.all(10),
+              child: Text(
+                text,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  shadows: [Shadows.textShadow],
+                  fontSize: fontSize,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 2,
                 ),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 2,
               ),
             ),
-            Positioned(
-              top: 10,
-              child: InkWell(
-                splashColor: Colors.green,
-                child: Ink(
-                  width: 100,
-                  height: 100,
-                  color: Colors.red,
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );

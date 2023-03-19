@@ -47,8 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Category(
           text: "Moda",
-          image: const AssetImage('assets/images/cat_moda.jpg'),
-          onTap: () => print('holita'),
+          imageRoute: 'assets/images/cat_moda.jpg',
+          onTap: () => print('Pressed'),
         ),
       ),
     );
