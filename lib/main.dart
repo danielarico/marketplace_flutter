@@ -14,14 +14,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Marketplace demo',
       theme: ThemeData(
-        primaryColor: AppColors.PURPLE,
-        appBarTheme: const AppBarTheme(color: AppColors.PURPLE),
-        scaffoldBackgroundColor: AppColors.CREAM,
+        primaryColor: AppColors.PRIMARY_01,
+        appBarTheme: const AppBarTheme(color: AppColors.PRIMARY_01),
+        scaffoldBackgroundColor: AppColors.PRIMARY_02,
         buttonTheme: const ButtonThemeData(
-          buttonColor: AppColors.PURPLE,
+          buttonColor: AppColors.PRIMARY_01,
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          backgroundColor: AppColors.PURPLE,
+          backgroundColor: AppColors.PRIMARY_01,
         ),
       ),
       home: const MyHomePage(title: 'Marketplace'),
