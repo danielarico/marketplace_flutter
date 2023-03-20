@@ -9,8 +9,8 @@ class Shadows {
   );
 
   static BoxShadow categoryShadow = BoxShadow(
-    color: AppColors.BLACK.withOpacity(0.2),
-    blurRadius: 15.0,
+    color: AppColors.BLACK.withOpacity(0.3),
+    blurRadius: 10.0,
     spreadRadius: 1.0,
   );
 

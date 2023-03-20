@@ -4,9 +4,13 @@ import '../widgets/category.dart';
 
 class Categories extends StatelessWidget {
   final String pageTitle = 'Marketplace';
-  final String fashionImageRoute = 'assets/images/cat_moda.jpg';
-  final String makeupImageRoute = 'assets/images/cat_maquillaje.jpg';
-  final String accesoriesImageRoute = 'assets/images/cat_accesorios.jpg';
+  final String fashionImageRoute = 'assets/images/cat_clothes.jpg';
+  final String makeupImageRoute = 'assets/images/cat_makeup.jpg';
+  final String accesoriesImageRoute = 'assets/images/cat_accessories.jpg';
+  final String personalCareImageRoute = 'assets/images/cat_personal_care.jpg';
+  final String decorationImageRoute = 'assets/images/cat_decoration.jpg';
+  final String wellnessImageRoute = 'assets/images/cat_wellness.jpg';
+  final String selfgrowthImageRoute = 'assets/images/cat_self_growth.jpg';
 
   const Categories({super.key});
 
@@ -14,9 +18,29 @@ class Categories extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Category> elements = [
       Category(
-        text: 'Moda',
-        imageRoute: fashionImageRoute,
-        onTap: () => print('Moda'),
+        text: 'Accesorios',
+        imageRoute: accesoriesImageRoute,
+        onTap: () => print('Accesorios'),
+      ),
+      Category(
+        text: 'Bienestar',
+        imageRoute: wellnessImageRoute,
+        onTap: () => print('Bienestar'),
+      ),
+      Category(
+        text: 'Crecimiento personal',
+        imageRoute: selfgrowthImageRoute,
+        onTap: () => print('Crecimiento personal'),
+      ),
+      Category(
+        text: 'Cuidado personal',
+        imageRoute: personalCareImageRoute,
+        onTap: () => print('Cuidado personal'),
+      ),
+      Category(
+        text: 'Decoración',
+        imageRoute: decorationImageRoute,
+        onTap: () => print('Decoración'),
       ),
       Category(
         text: 'Maquillaje',
@@ -24,19 +48,9 @@ class Categories extends StatelessWidget {
         onTap: () => print('Maquillaje'),
       ),
       Category(
-        text: 'Accesorios',
-        imageRoute: accesoriesImageRoute,
-        onTap: () => print('Accesorios'),
-      ),
-      Category(
-        text: 'Accesorios',
-        imageRoute: accesoriesImageRoute,
-        onTap: () => print('Accesorios'),
-      ),
-      Category(
-        text: 'Accesorios',
-        imageRoute: accesoriesImageRoute,
-        onTap: () => print('Accesorios'),
+        text: 'Ropa',
+        imageRoute: fashionImageRoute,
+        onTap: () => print('Ropa'),
       ),
     ];
 

@@ -19,8 +19,8 @@ class Category extends StatelessWidget {
   final double fontSize = 23;
   final double imageOpacity = 0.85;
   final Color containerColor = AppColors.WHITE;
-  final Color highlightColor = Colors.grey.withOpacity(0.1);
-  final Color splashColor = Colors.grey.withOpacity(0.1);
+  final Color highlightColor = Colors.black.withOpacity(0.1);
+  final Color splashColor = Colors.black.withOpacity(0.2);
 
   @override
   Widget build(BuildContext context) {
@@ -34,9 +34,7 @@ class Category extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(borderRadius),
         color: containerColor,
-        boxShadow: [
-          Shadows.categoryShadow,
-        ],
+        boxShadow: [Shadows.categoryShadow],
       ),
       child: Material(
         child: Ink(

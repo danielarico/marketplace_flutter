@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
 import 'package:marketplace_flutter/screens/categories.dart';
-import 'package:marketplace_flutter/widgets/category.dart';
 
 void main() {
   runApp(const MyApp());
