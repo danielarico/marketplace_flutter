@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
+import 'package:marketplace_flutter/screens/categories.dart';
 import 'package:marketplace_flutter/widgets/category.dart';
 
 void main() {
@@ -40,17 +41,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Category(
-          text: "Moda",
-          imageRoute: 'assets/images/cat_moda.jpg',
-          onTap: () => print('Pressed'),
-        ),
-      ),
-    );
+    return Categories();
   }
 }

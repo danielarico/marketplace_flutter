@@ -8,6 +8,7 @@ class Category extends StatelessWidget {
   final Function() onTap;
 
   Category({
+    super.key,
     required this.text,
     required this.imageRoute,
     required this.onTap,
@@ -18,6 +19,8 @@ class Category extends StatelessWidget {
   final double fontSize = 23;
   final double imageOpacity = 0.85;
   final Color containerColor = AppColors.WHITE;
+  final Color highlightColor = Colors.grey.withOpacity(0.1);
+  final Color splashColor = Colors.grey.withOpacity(0.1);
 
   @override
   Widget build(BuildContext context) {
@@ -46,8 +49,8 @@ class Category extends StatelessWidget {
             ),
           ),
           child: InkWell(
-            splashColor: Colors.grey.withOpacity(0.1),
-            highlightColor: Colors.grey.withOpacity(0.1),
+            splashColor: splashColor,
+            highlightColor: highlightColor,
             onTap: onTap,
             child: Container(
               alignment: Alignment.center,
