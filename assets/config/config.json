@@ -1,0 +1,39 @@
+{
+    "categories": [
+        {
+            "name": "accesories",
+            "text": "Accesorios",
+            "imageRoute": "assets/images/cat_accessories.jpg"
+        },
+        {
+            "name": "wellness",
+            "text": "Bienemnstar",
+            "imageRoute": "assets/images/cat_wellness.jpg"
+        },
+        {
+            "name": "self_growth",
+            "text": "Crecimiento personal",
+            "imageRoute": "assets/images/cat_self_growth.jpg"
+        },
+        {
+            "name": "personalCare",
+            "text": "Cuidado personal",
+            "imageRoute": "assets/images/cat_personal_care.jpg"
+        },
+        {
+            "name": "decoration",
+            "text": "Decoración",
+            "imageRoute": "assets/images/cat_decoration.jpg"
+        },
+        {
+            "name": "makeup",
+            "text": "Maquillaje",
+            "imageRoute": "assets/images/cat_makeup.jpg"
+        },
+        {
+            "name": "clothes",
+            "text": "Ropa",
+            "imageRoute": "assets/images/cat_clothes.jpg"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
-import 'package:marketplace_flutter/screens/categories.dart';
+import 'package:marketplace_flutter/pages/categories.dart';
+import 'package:marketplace_flutter/pages/subcategories.dart';
+import 'package:marketplace_flutter/utils/utils.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,8 +40,23 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final String configJsonRoute = "assets/config/config.json";
+  late Future<Map> configJson = Utils.readJsonFile(configJsonRoute);
+
   @override
   Widget build(BuildContext context) {
-    return Categories();
+    return FutureBuilder(
+      future: configJson,
+      builder: (ctx, snapshot) {
+        if (snapshot.hasData) {
+          final json = snapshot.data as Map;
+          return Categories(
+            categories: json["categories"],
+          );
+        } else {
+          return const Center(child: Text("Error"));
+        }
+      },
+    );
   }
 }

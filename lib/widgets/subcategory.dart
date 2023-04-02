@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
 import 'package:marketplace_flutter/foundations/shadows.dart';
 
-class Category extends StatelessWidget {
+class Subcategory extends StatelessWidget {
   final String text;
   final String imageRoute;
   final Function() onTap;
 
-  Category({
+  Subcategory({
     super.key,
     required this.text,
     required this.imageRoute,

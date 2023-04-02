@@ -27,3 +27,4 @@ flutter:
     - assets/images/cat_decoration.jpg
     - assets/images/cat_wellness.jpg
     - assets/images/cat_self_growth.jpg
+    - assets/config/config.json
