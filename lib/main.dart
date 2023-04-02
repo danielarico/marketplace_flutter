@@ -41,7 +41,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final String configJsonRoute = "assets/config/config.json";
-  late Future<Map> configJson = Utils.readJsonFile(configJsonRoute);
+  late Future<Map<String, dynamic>> configJson =
+      Utils.readJsonFile(configJsonRoute);
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
       future: configJson,
       builder: (ctx, snapshot) {
         if (snapshot.hasData) {
-          final json = snapshot.data as Map;
+          final json = snapshot.data as Map<String, dynamic>;
           return Categories(
             categories: json["categories"],
           );

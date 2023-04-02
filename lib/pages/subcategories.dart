@@ -3,41 +3,33 @@ import 'package:flutter/material.dart';
 import '../widgets/subcategory.dart';
 
 class Subcategories extends StatelessWidget {
-  final String pageTitle = 'Marketplace';
-  final String fashionImageRoute = 'assets/images/cat_clothes.jpg';
-  final String makeupImageRoute = 'assets/images/cat_makeup.jpg';
-  final String accesoriesImageRoute = 'assets/images/cat_accessories.jpg';
-  final String personalCareImageRoute = 'assets/images/cat_personal_care.jpg';
-  final String decorationImageRoute = 'assets/images/cat_decoration.jpg';
-  final String wellnessImageRoute = 'assets/images/cat_wellness.jpg';
-  final String selfgrowthImageRoute = 'assets/images/cat_self_growth.jpg';
+  final String categoryName;
+  final List subcategories;
 
-  const Subcategories({super.key});
+  const Subcategories({
+    super.key,
+    required this.categoryName,
+    required this.subcategories,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final List<Subcategory> elements = [
-      Subcategory(
-        text: 'Accesorios',
-        imageRoute: accesoriesImageRoute,
-        onTap: () => print('Accesorios'),
-      ),
-    ];
-
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          pageTitle,
+          categoryName,
         ),
       ),
-      // body: ListView.count(
-      //   crossAxisCount: 2,
-      //   childAspectRatio: 0.6,
-      //   crossAxisSpacing: 15,
-      //   mainAxisSpacing: 15,
-      //   padding: const EdgeInsets.all(20),
-      //   children: elements,
-      // ),
+      body: ListView.builder(
+        itemCount: subcategories.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Subcategory(
+            text: subcategories[index]["text"],
+            imageRoute: subcategories[index]["imageRoute"],
+            onTap: () => print(subcategories[index]["name"]),
+          );
+        },
+      ),
     );
   }
 }

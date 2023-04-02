@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marketplace_flutter/pages/subcategories.dart';
 
 import '../widgets/category.dart';
 
@@ -34,7 +35,14 @@ class Categories extends StatelessWidget {
           return Category(
             text: categories[index]["text"],
             imageRoute: categories[index]["imageRoute"],
-            onTap: () => print('Holi'),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => Subcategories(
+                  categoryName: categories[index]["name"],
+                  subcategories: categories[index]["subcategories"],
+                ),
+              ),
+            ),
           );
         },
       ),

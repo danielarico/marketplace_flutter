@@ -3,37 +3,121 @@
         {
             "name": "accesories",
             "text": "Accesorios",
-            "imageRoute": "assets/images/cat_accessories.jpg"
+            "imageRoute": "assets/images/cat_accessories.jpg",
+            "subcategories": [
+                {
+                    "name": "accesories",
+                    "text": "Accesorios",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
+                },
+                {
+                    "name": "wellness",
+                    "text": "Bienestar",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                }
+            ]
         },
         {
             "name": "wellness",
-            "text": "Bienemnstar",
-            "imageRoute": "assets/images/cat_wellness.jpg"
+            "text": "Bienestar",
+            "imageRoute": "assets/images/cat_wellness.jpg",
+            "subcategories": [
+                {
+                    "name": "accesories",
+                    "text": "Accesorios",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
+                },
+                {
+                    "name": "wellness",
+                    "text": "Bienemnstar",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                }
+            ]
         },
         {
             "name": "self_growth",
             "text": "Crecimiento personal",
-            "imageRoute": "assets/images/cat_self_growth.jpg"
+            "imageRoute": "assets/images/cat_self_growth.jpg",
+            "subcategories": [
+                {
+                    "name": "accesories",
+                    "text": "Accesorios",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
+                },
+                {
+                    "name": "wellness",
+                    "text": "Bienemnstar",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                }
+            ]
         },
         {
             "name": "personalCare",
             "text": "Cuidado personal",
-            "imageRoute": "assets/images/cat_personal_care.jpg"
+            "imageRoute": "assets/images/cat_personal_care.jpg",
+            "subcategories": [
+                {
+                    "name": "accesories",
+                    "text": "Accesorios",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
+                },
+                {
+                    "name": "wellness",
+                    "text": "Bienemnstar",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                }
+            ]
         },
         {
             "name": "decoration",
             "text": "Decoración",
-            "imageRoute": "assets/images/cat_decoration.jpg"
+            "imageRoute": "assets/images/cat_decoration.jpg",
+            "subcategories": [
+                {
+                    "name": "accesories",
+                    "text": "Accesorios",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
+                },
+                {
+                    "name": "wellness",
+                    "text": "Bienemnstar",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                }
+            ]
         },
         {
             "name": "makeup",
             "text": "Maquillaje",
-            "imageRoute": "assets/images/cat_makeup.jpg"
+            "imageRoute": "assets/images/cat_makeup.jpg",
+            "subcategories": [
+                {
+                    "name": "accesories",
+                    "text": "Accesorios",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
+                },
+                {
+                    "name": "wellness",
+                    "text": "Bienemnstar",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                }
+            ]
         },
         {
             "name": "clothes",
             "text": "Ropa",
-            "imageRoute": "assets/images/cat_clothes.jpg"
+            "imageRoute": "assets/images/cat_clothes.jpg",
+            "subcategories": [
+                {
+                    "name": "accesories",
+                    "text": "Accesorios",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
+                },
+                {
+                    "name": "wellness",
+                    "text": "Bienemnstar",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                }
+            ]
         }
     ]
 }
