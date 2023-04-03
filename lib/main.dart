@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
 import 'package:marketplace_flutter/pages/categories.dart';
-import 'package:marketplace_flutter/pages/subcategories.dart';
 import 'package:marketplace_flutter/utils/utils.dart';
 
 void main() {

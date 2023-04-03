@@ -6,13 +6,23 @@
             "imageRoute": "assets/images/cat_accessories.jpg",
             "subcategories": [
                 {
-                    "name": "accesories",
-                    "text": "Accesorios",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
+                    "name": "bags",
+                    "text": "Bolsos",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
                 },
                 {
-                    "name": "wellness",
-                    "text": "Bienestar",
+                    "name": "glasses",
+                    "text": "Gafas",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                },
+                {
+                    "name": "jewerly",
+                    "text": "Joyería",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                },
+                {
+                    "name": "clocks",
+                    "text": "Relojes",
                     "imageRoute": "assets/images/cat_wellness.jpg"
                 }
             ]
@@ -23,13 +33,18 @@
             "imageRoute": "assets/images/cat_wellness.jpg",
             "subcategories": [
                 {
-                    "name": "accesories",
-                    "text": "Accesorios",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
+                    "name": "spa",
+                    "text": "Spa",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
                 },
                 {
-                    "name": "wellness",
-                    "text": "Bienemnstar",
+                    "name": "sports",
+                    "text": "Deportes",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                },
+                {
+                    "name": "yoga",
+                    "text": "Yoga",
                     "imageRoute": "assets/images/cat_wellness.jpg"
                 }
             ]
@@ -40,30 +55,23 @@
             "imageRoute": "assets/images/cat_self_growth.jpg",
             "subcategories": [
                 {
-                    "name": "accesories",
-                    "text": "Accesorios",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
-                },
-                {
-                    "name": "wellness",
-                    "text": "Bienemnstar",
+                    "name": "art_classes",
+                    "text": "Cursos de arte",
                     "imageRoute": "assets/images/cat_wellness.jpg"
-                }
-            ]
-        },
-        {
-            "name": "personalCare",
-            "text": "Cuidado personal",
-            "imageRoute": "assets/images/cat_personal_care.jpg",
-            "subcategories": [
-                {
-                    "name": "accesories",
-                    "text": "Accesorios",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
                 },
                 {
-                    "name": "wellness",
-                    "text": "Bienemnstar",
+                    "name": "craft_classes",
+                    "text": "Cursos de manualidades",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                },
+                {
+                    "name": "books",
+                    "text": "Libros",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                },
+                {
+                    "name": "tech_classes",
+                    "text": "Cursos de tecnología",
                     "imageRoute": "assets/images/cat_wellness.jpg"
                 }
             ]
@@ -74,13 +82,18 @@
             "imageRoute": "assets/images/cat_decoration.jpg",
             "subcategories": [
                 {
-                    "name": "accesories",
-                    "text": "Accesorios",
+                    "name": "lamps",
+                    "text": "Lámparas",
                     "imageRoute": "assets/images/cat_accessories.jpg"
                 },
                 {
-                    "name": "wellness",
-                    "text": "Bienemnstar",
+                    "name": "paintings",
+                    "text": "Cuadros",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                },
+                {
+                    "name": "plants",
+                    "text": "Plantas",
                     "imageRoute": "assets/images/cat_wellness.jpg"
                 }
             ]
@@ -91,14 +104,19 @@
             "imageRoute": "assets/images/cat_makeup.jpg",
             "subcategories": [
                 {
-                    "name": "accesories",
-                    "text": "Accesorios",
+                    "name": "eyes",
+                    "text": "Ojos",
                     "imageRoute": "assets/images/cat_accessories.jpg"
                 },
                 {
-                    "name": "wellness",
-                    "text": "Bienemnstar",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "name": "lips",
+                    "text": "Labios",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
+                },
+                {
+                    "name": "nails",
+                    "text": "Uñas",
+                    "imageRoute": "assets/images/cat_accessories.jpg"
                 }
             ]
         },
@@ -108,13 +126,23 @@
             "imageRoute": "assets/images/cat_clothes.jpg",
             "subcategories": [
                 {
-                    "name": "accesories",
-                    "text": "Accesorios",
+                    "name": "tshirts",
+                    "text": "Camisetas",
                     "imageRoute": "assets/images/cat_accessories.jpg"
                 },
                 {
-                    "name": "wellness",
-                    "text": "Bienemnstar",
+                    "name": "jeans",
+                    "text": "Jeans",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                },
+                {
+                    "name": "shoes",
+                    "text": "Zapatos",
+                    "imageRoute": "assets/images/cat_wellness.jpg"
+                },
+                {
+                    "name": "jackets",
+                    "text": "Chaquetas",
                     "imageRoute": "assets/images/cat_wellness.jpg"
                 }
             ]
