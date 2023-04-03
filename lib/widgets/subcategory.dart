@@ -51,22 +51,28 @@ class Subcategory extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                _cardText(text),
-                ElevatedButton(
-                  onPressed: () => print("it's pressed"),
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: AppColors.WHITE,
-                    backgroundColor: AppColors.SECONDARY_01,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15.0),
-                      side: const BorderSide(
-                        width: 2.0,
-                        color: AppColors.WHITE,
+                Expanded(
+                  flex: 3,
+                  child: _cardText(text),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: ElevatedButton(
+                    onPressed: () => print("it's pressed"),
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: AppColors.WHITE,
+                      backgroundColor: AppColors.SECONDARY_01,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                        side: const BorderSide(
+                          width: 2.0,
+                          color: AppColors.WHITE,
+                        ),
                       ),
                     ),
+                    child: _buttonText(buttonText),
                   ),
-                  child: _buttonText(buttonText),
-                )
+                ),
               ],
             ),
           ),
@@ -78,7 +84,7 @@ class Subcategory extends StatelessWidget {
   Widget _cardText(String text) {
     return Text(
       text,
-      textAlign: TextAlign.center,
+      textAlign: TextAlign.left,
       style: TextStyle(
         color: Colors.white,
         shadows: [Shadows.textShadow],
