@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
 import 'package:marketplace_flutter/foundations/shadows.dart';
 
-class Subcategory extends StatelessWidget {
-  final String text;
+class ProductCard extends StatelessWidget {
+  final String productName;
+  final String productCost;
   final String imageRoute;
   final Function() onTap;
 
-  Subcategory({
+  ProductCard({
     super.key,
-    required this.text,
+    required this.productName,
+    required this.productCost,
     required this.imageRoute,
     required this.onTap,
   });
@@ -22,7 +24,7 @@ class Subcategory extends StatelessWidget {
   final Color containerColor = AppColors.WHITE;
   final Color highlightColor = Colors.black.withOpacity(0.2);
   final Color splashColor = Colors.black.withOpacity(0.3);
-  final String buttonText = "Ver productos";
+  final String buttonText = "Ver detalles";
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +55,13 @@ class Subcategory extends StatelessWidget {
               children: [
                 Expanded(
                   flex: 3,
-                  child: _cardText(text),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      _cardText(productName),
+                      _cardText(productCost),
+                    ],
+                  ),
                 ),
                 Expanded(
                   flex: 2,

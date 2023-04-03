@@ -8,22 +8,26 @@
                 {
                     "name": "bags",
                     "text": "Bolsos",
-                    "imageRoute": "assets/images/subcat_bags.jpg"
+                    "imageRoute": "assets/images/subcat_bags.jpg",
+                    "products": []
                 },
                 {
                     "name": "glasses",
                     "text": "Gafas",
-                    "imageRoute": "assets/images/subcat_glasses.jpg"
+                    "imageRoute": "assets/images/subcat_glasses.jpg",
+                    "products": []
                 },
                 {
                     "name": "jewerly",
                     "text": "Joyería",
-                    "imageRoute": "assets/images/subcat_jewerly.jpg"
+                    "imageRoute": "assets/images/subcat_jewerly.jpg",
+                    "products": []
                 },
                 {
                     "name": "clocks",
                     "text": "Relojes",
-                    "imageRoute": "assets/images/subcat_clocks.jpg"
+                    "imageRoute": "assets/images/subcat_clocks.jpg",
+                    "products": []
                 }
             ]
         },
@@ -35,17 +39,20 @@
                 {
                     "name": "spa",
                     "text": "Spa",
-                    "imageRoute": "assets/images/subcat_spa.jpg"
+                    "imageRoute": "assets/images/subcat_spa.jpg",
+                    "products": []
                 },
                 {
                     "name": "sports",
                     "text": "Deportes",
-                    "imageRoute": "assets/images/subcat_sports.jpg"
+                    "imageRoute": "assets/images/subcat_sports.jpg",
+                    "products": []
                 },
                 {
                     "name": "yoga",
                     "text": "Yoga",
-                    "imageRoute": "assets/images/subcat_yoga.jpg"
+                    "imageRoute": "assets/images/subcat_yoga.jpg",
+                    "products": []
                 }
             ]
         },
@@ -57,22 +64,26 @@
                 {
                     "name": "art_classes",
                     "text": "Cursos de arte",
-                    "imageRoute": "assets/images/subcat_arts.jpg"
+                    "imageRoute": "assets/images/subcat_arts.jpg",
+                    "products": []
                 },
                 {
                     "name": "craft_classes",
                     "text": "Cursos de manualidades",
-                    "imageRoute": "assets/images/subcat_crafts.jpg"
+                    "imageRoute": "assets/images/subcat_crafts.jpg",
+                    "products": []
                 },
                 {
                     "name": "books",
                     "text": "Libros",
-                    "imageRoute": "assets/images/subcat_books.jpg"
+                    "imageRoute": "assets/images/subcat_books.jpg",
+                    "products": []
                 },
                 {
                     "name": "tech_classes",
                     "text": "Cursos de tecnología",
-                    "imageRoute": "assets/images/subcat_tech.jpg"
+                    "imageRoute": "assets/images/subcat_tech.jpg",
+                    "products": []
                 }
             ]
         },
@@ -84,17 +95,20 @@
                 {
                     "name": "lamps",
                     "text": "Lámparas",
-                    "imageRoute": "assets/images/subcat_lamp.jpg"
+                    "imageRoute": "assets/images/subcat_lamp.jpg",
+                    "products": []
                 },
                 {
                     "name": "paintings",
                     "text": "Cuadros",
-                    "imageRoute": "assets/images/subcat_painting.jpg"
+                    "imageRoute": "assets/images/subcat_painting.jpg",
+                    "products": []
                 },
                 {
                     "name": "plants",
                     "text": "Plantas",
-                    "imageRoute": "assets/images/subcat_plants.jpg"
+                    "imageRoute": "assets/images/subcat_plants.jpg",
+                    "products": []
                 }
             ]
         },
@@ -106,17 +120,20 @@
                 {
                     "name": "eyes",
                     "text": "Ojos",
-                    "imageRoute": "assets/images/subcat_eyeshadows.jpg"
+                    "imageRoute": "assets/images/subcat_eyeshadows.jpg",
+                    "products": []
                 },
                 {
                     "name": "lips",
                     "text": "Labios",
-                    "imageRoute": "assets/images/subcat_lipstick.jpg"
+                    "imageRoute": "assets/images/subcat_lipstick.jpg",
+                    "products": []
                 },
                 {
                     "name": "nails",
                     "text": "Uñas",
-                    "imageRoute": "assets/images/subcat_nails.jpg"
+                    "imageRoute": "assets/images/subcat_nails.jpg",
+                    "products": []
                 }
             ]
         },
@@ -128,22 +145,78 @@
                 {
                     "name": "tshirts",
                     "text": "Camisetas",
-                    "imageRoute": "assets/images/subcat_tshirt.jpg"
+                    "imageRoute": "assets/images/subcat_tshirt.jpg",
+                    "products": [
+                        {
+                            "name": "tshirt_1",
+                            "text": "Camiseta 1",
+                            "cost": "50.000 COP",
+                            "imageRoute": "assets/images/subcat_tshirt.jpg"
+                        },
+                        {
+                            "name": "tshirt_2",
+                            "text": "Camiseta 2",
+                            "cost": "60.000 COP",
+                            "imageRoute": "assets/images/subcat_tshirt.jpg"
+                        }
+                    ]
                 },
                 {
                     "name": "jeans",
                     "text": "Jeans",
-                    "imageRoute": "assets/images/subcat_jeans.jpg"
+                    "imageRoute": "assets/images/subcat_jeans.jpg",
+                    "products": [
+                        {
+                            "name": "jean_1",
+                            "text": "Jean 1",
+                            "cost": "80.000 COP",
+                            "imageRoute": "assets/images/subcat_jeans.jpg"
+                        },
+                        {
+                            "name": "jean_2",
+                            "text": "Jean 2",
+                            "cost": "90.000 COP",
+                            "imageRoute": "assets/images/subcat_jeans.jpg"
+                        }
+                    ]
                 },
                 {
                     "name": "shoes",
                     "text": "Zapatos",
-                    "imageRoute": "assets/images/subcat_shoes.jpg"
+                    "imageRoute": "assets/images/subcat_shoes.jpg",
+                    "products": [
+                        {
+                            "name": "shoes_1",
+                            "text": "Zapatos 1",
+                            "cost": "110.000 COP",
+                            "imageRoute": "assets/images/subcat_shoes.jpg"
+                        },
+                        {
+                            "name": "shoes_2",
+                            "text": "Zapatos 2",
+                            "cost": "90.000 COP",
+                            "imageRoute": "assets/images/subcat_shoes.jpg"
+                        }
+                    ]
                 },
                 {
                     "name": "jackets",
                     "text": "Chaquetas",
-                    "imageRoute": "assets/images/subcat_jacket.jpg"
+                    "imageRoute": "assets/images/subcat_jacket.jpg",
+                    "products": [
+                        {
+                            "name": "jacket_1",
+                            "text": "Chaqueta 1",
+                            "cost": "250.000 COP",
+                            "imageRoute": "assets/images/subcat_jacket.jpg"
+                        },
+                        {
+                            "name": "jacket_2",
+                            "text": "Chaqueta 2",
+                            "cost": "190.000 COP",
+                            "imageRoute": "assets/images/subcat_jacket.jpg"
+                        }
+                    ]
                 }
             ]
         }
