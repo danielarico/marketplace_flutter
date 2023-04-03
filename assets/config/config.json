@@ -8,22 +8,22 @@
                 {
                     "name": "bags",
                     "text": "Bolsos",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_bags.jpg"
                 },
                 {
                     "name": "glasses",
                     "text": "Gafas",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_glasses.jpg"
                 },
                 {
                     "name": "jewerly",
                     "text": "Joyería",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_jewerly.jpg"
                 },
                 {
                     "name": "clocks",
                     "text": "Relojes",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_clocks.jpg"
                 }
             ]
         },
@@ -35,17 +35,17 @@
                 {
                     "name": "spa",
                     "text": "Spa",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_spa.jpg"
                 },
                 {
                     "name": "sports",
                     "text": "Deportes",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_sports.jpg"
                 },
                 {
                     "name": "yoga",
                     "text": "Yoga",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_yoga.jpg"
                 }
             ]
         },
@@ -57,22 +57,22 @@
                 {
                     "name": "art_classes",
                     "text": "Cursos de arte",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_arts.jpg"
                 },
                 {
                     "name": "craft_classes",
                     "text": "Cursos de manualidades",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_crafts.jpg"
                 },
                 {
                     "name": "books",
                     "text": "Libros",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_books.jpg"
                 },
                 {
                     "name": "tech_classes",
                     "text": "Cursos de tecnología",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_tech.jpg"
                 }
             ]
         },
@@ -84,17 +84,17 @@
                 {
                     "name": "lamps",
                     "text": "Lámparas",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
+                    "imageRoute": "assets/images/subcat_lamp.jpg"
                 },
                 {
                     "name": "paintings",
                     "text": "Cuadros",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_painting.jpg"
                 },
                 {
                     "name": "plants",
                     "text": "Plantas",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_plants.jpg"
                 }
             ]
         },
@@ -106,17 +106,17 @@
                 {
                     "name": "eyes",
                     "text": "Ojos",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
+                    "imageRoute": "assets/images/subcat_eyeshadows.jpg"
                 },
                 {
                     "name": "lips",
                     "text": "Labios",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
+                    "imageRoute": "assets/images/subcat_lipstick.jpg"
                 },
                 {
                     "name": "nails",
                     "text": "Uñas",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
+                    "imageRoute": "assets/images/subcat_nails.jpg"
                 }
             ]
         },
@@ -128,22 +128,22 @@
                 {
                     "name": "tshirts",
                     "text": "Camisetas",
-                    "imageRoute": "assets/images/cat_accessories.jpg"
+                    "imageRoute": "assets/images/subcat_tshirt.jpg"
                 },
                 {
                     "name": "jeans",
                     "text": "Jeans",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_jeans.jpg"
                 },
                 {
                     "name": "shoes",
                     "text": "Zapatos",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_shoes.jpg"
                 },
                 {
                     "name": "jackets",
                     "text": "Chaquetas",
-                    "imageRoute": "assets/images/cat_wellness.jpg"
+                    "imageRoute": "assets/images/subcat_jacket.jpg"
                 }
             ]
         }

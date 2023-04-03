@@ -38,7 +38,7 @@ class Categories extends StatelessWidget {
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) => Subcategories(
-                  categoryName: categories[index]["name"],
+                  categoryName: categories[index]["text"],
                   subcategories: categories[index]["subcategories"],
                 ),
               ),

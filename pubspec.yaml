@@ -20,10 +20,6 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/cat_accessories.jpg
-    - assets/images/cat_makeup.jpg
-    - assets/images/cat_clothes.jpg
-    - assets/images/cat_decoration.jpg
-    - assets/images/cat_wellness.jpg
-    - assets/images/cat_self_growth.jpg
+    - assets/images/
+
     - assets/config/config.json

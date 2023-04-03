@@ -58,13 +58,7 @@ class Category extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
-                  shadows: [
-                    BoxShadow(
-                      color: AppColors.BLACK.withOpacity(0.95),
-                      blurRadius: 15.0,
-                      spreadRadius: 4.0,
-                    )
-                  ],
+                  shadows: [Shadows.textShadow],
                   fontSize: fontSize,
                   fontWeight: FontWeight.w700,
                   letterSpacing: 2,
