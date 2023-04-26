@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
 import 'package:marketplace_flutter/foundations/shadows.dart';
 
+import 'card_text.dart';
+
 class Category extends StatelessWidget {
   final String text;
   final String imageRoute;
@@ -16,9 +18,11 @@ class Category extends StatelessWidget {
 
   final double cardHeight = 250;
   final double borderRadius = 10;
-  final double fontSize = 20;
-  final double imageOpacity = 0.85;
   final Color containerColor = AppColors.WHITE;
+  final double cardPadding = 4;
+
+  final double imageOpacity = 0.75;
+
   final Color highlightColor = Colors.black.withOpacity(0.2);
   final Color splashColor = Colors.black.withOpacity(0.3);
 
@@ -30,7 +34,7 @@ class Category extends StatelessWidget {
     return Container(
       width: cardWidth,
       height: cardHeight,
-      padding: const EdgeInsets.all(4),
+      padding: EdgeInsets.all(cardPadding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(borderRadius),
         color: containerColor,
@@ -53,19 +57,7 @@ class Category extends StatelessWidget {
             child: Container(
               alignment: Alignment.center,
               margin: const EdgeInsets.all(10),
-              child: Text(
-                text,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  shadows: [Shadows.textShadow],
-                  fontSize: fontSize,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 2,
-                ),
-                overflow: TextOverflow.ellipsis,
-                maxLines: 2,
-              ),
+              child: CardText(text: text),
             ),
           ),
         ),

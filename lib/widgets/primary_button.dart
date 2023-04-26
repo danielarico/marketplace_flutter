@@ -12,8 +12,8 @@ class PrimaryButton extends StatelessWidget {
   });
 
   final Color buttonFontColor = AppColors.WHITE;
-  final Color buttonBackground = AppColors.SECONDARY_01.withOpacity(0.9);
-  final double buttonFontSize = 15;
+  final Color buttonBackground = AppColors.SECONDARY_01.withOpacity(0.95);
+  final double buttonFontSize = 13;
   final double buttonRadius = 10;
 
   @override
@@ -43,8 +43,8 @@ class PrimaryButton extends StatelessWidget {
       style: TextStyle(
         color: buttonFontColor,
         fontSize: buttonFontSize,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 1,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.5,
       ),
       overflow: TextOverflow.ellipsis,
       maxLines: 1,

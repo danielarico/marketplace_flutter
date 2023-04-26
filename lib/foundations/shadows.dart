@@ -14,9 +14,8 @@ class Shadows {
     spreadRadius: 1.0,
   );
 
-  static BoxShadow textShadow = BoxShadow(
-    color: AppColors.BLACK.withOpacity(0.9),
-    blurRadius: 20.0,
-    spreadRadius: 2.0,
+  static BoxShadow cardTextShadow = BoxShadow(
+    color: AppColors.BLACK.withOpacity(1),
+    blurRadius: 15,
   );
 }
