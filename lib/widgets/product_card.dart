@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
 import 'package:marketplace_flutter/foundations/shadows.dart';
+import 'package:marketplace_flutter/widgets/primary_button.dart';
 
 class ProductCard extends StatelessWidget {
   final String productName;
@@ -17,74 +18,62 @@ class ProductCard extends StatelessWidget {
   });
 
   final double cardHeight = 180;
+  final double cardFontSize = 18;
+  final Color cardFontColor = AppColors.PRIMARY_01;
+  final Color cardBackgroundColor = AppColors.WHITE;
+  final double cardMargin = 15;
+  final double cardPadding = 6;
+
+  final String buttonText = "Ver detalles";
+
   final double borderRadius = 5;
-  final double cardFontSize = 20;
-  final double buttonFontSize = 15;
-  final double imageOpacity = 0.85;
-  final Color containerColor = AppColors.WHITE;
+  final double imageOpacity = 1;
+
   final Color highlightColor = Colors.black.withOpacity(0.2);
   final Color splashColor = Colors.black.withOpacity(0.3);
-  final String buttonText = "Ver detalles";
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(15),
+      margin: EdgeInsets.all(cardMargin),
       height: cardHeight,
-      padding: const EdgeInsets.all(6),
+      padding: EdgeInsets.all(cardPadding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(borderRadius),
-        color: containerColor,
+        color: cardBackgroundColor,
         boxShadow: [Shadows.categoryShadow],
       ),
-      child: Material(
-        child: Ink(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(borderRadius),
-            image: DecorationImage(
-              image: AssetImage(imageRoute),
-              fit: BoxFit.cover,
-              opacity: imageOpacity,
-            ),
-          ),
-          child: Container(
-            alignment: Alignment.centerLeft,
-            margin: const EdgeInsets.all(10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            flex: 2,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Expanded(
-                  flex: 3,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      _cardText(productName),
-                      _cardText(productCost),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  flex: 2,
-                  child: ElevatedButton(
-                    onPressed: onTap,
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: AppColors.WHITE,
-                      backgroundColor: AppColors.SECONDARY_01,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                        side: const BorderSide(
-                          width: 2.0,
-                          color: AppColors.WHITE,
-                        ),
-                      ),
-                    ),
-                    child: _buttonText(buttonText),
-                  ),
+                _cardText(productName),
+                _cardText(productCost),
+                PrimaryButton(
+                  buttonText: buttonText,
+                  onTap: onTap,
                 ),
               ],
             ),
           ),
-        ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(borderRadius),
+                image: DecorationImage(
+                  image: AssetImage(imageRoute),
+                  fit: BoxFit.cover,
+                  opacity: imageOpacity,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -94,30 +83,13 @@ class ProductCard extends StatelessWidget {
       text,
       textAlign: TextAlign.left,
       style: TextStyle(
-        color: Colors.white,
-        shadows: [Shadows.textShadow],
+        color: cardFontColor,
         fontSize: cardFontSize,
-        fontWeight: FontWeight.w700,
-        letterSpacing: 2,
-      ),
-      overflow: TextOverflow.ellipsis,
-      maxLines: 2,
-    );
-  }
-
-  Widget _buttonText(String text) {
-    return Text(
-      text,
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        color: Colors.white,
-        shadows: [Shadows.textShadow],
-        fontSize: buttonFontSize,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontWeight.w500,
         letterSpacing: 1,
       ),
       overflow: TextOverflow.ellipsis,
-      maxLines: 1,
+      maxLines: 2,
     );
   }
 }

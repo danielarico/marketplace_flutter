@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
 import 'package:marketplace_flutter/foundations/shadows.dart';
+import 'package:marketplace_flutter/widgets/primary_button.dart';
 
 class Subcategory extends StatelessWidget {
   final String text;
@@ -17,11 +18,13 @@ class Subcategory extends StatelessWidget {
   final double cardHeight = 180;
   final double borderRadius = 5;
   final double cardFontSize = 20;
+
   final double buttonFontSize = 15;
   final double imageOpacity = 0.85;
   final Color containerColor = AppColors.WHITE;
   final Color highlightColor = Colors.black.withOpacity(0.2);
   final Color splashColor = Colors.black.withOpacity(0.3);
+
   final String buttonText = "Ver productos";
 
   @override
@@ -57,20 +60,9 @@ class Subcategory extends StatelessWidget {
                 ),
                 Expanded(
                   flex: 2,
-                  child: ElevatedButton(
-                    onPressed: onTap,
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: AppColors.WHITE,
-                      backgroundColor: AppColors.SECONDARY_01,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                        side: const BorderSide(
-                          width: 2.0,
-                          color: AppColors.WHITE,
-                        ),
-                      ),
-                    ),
-                    child: _buttonText(buttonText),
+                  child: PrimaryButton(
+                    buttonText: buttonText,
+                    onTap: onTap,
                   ),
                 ),
               ],
@@ -94,22 +86,6 @@ class Subcategory extends StatelessWidget {
       ),
       overflow: TextOverflow.ellipsis,
       maxLines: 2,
-    );
-  }
-
-  Widget _buttonText(String text) {
-    return Text(
-      text,
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        color: Colors.white,
-        shadows: [Shadows.textShadow],
-        fontSize: buttonFontSize,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 1,
-      ),
-      overflow: TextOverflow.ellipsis,
-      maxLines: 1,
     );
   }
 }
