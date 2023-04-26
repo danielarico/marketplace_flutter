@@ -48,16 +48,19 @@ class ProductCard extends StatelessWidget {
         children: [
           Expanded(
             flex: 2,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _cardText(productName),
-                _cardText(productCost),
-                PrimaryButton(
-                  buttonText: buttonText,
-                  onTap: onTap,
-                ),
-              ],
+            child: Padding(
+              padding: EdgeInsets.all(cardPadding),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  _cardText(productName),
+                  _cardText(productCost),
+                  PrimaryButton(
+                    buttonText: buttonText,
+                    onTap: onTap,
+                  ),
+                ],
+              ),
             ),
           ),
           Expanded(
@@ -81,7 +84,7 @@ class ProductCard extends StatelessWidget {
   Widget _cardText(String text) {
     return Text(
       text,
-      textAlign: TextAlign.left,
+      textAlign: TextAlign.center,
       style: TextStyle(
         color: cardFontColor,
         fontSize: cardFontSize,

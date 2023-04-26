@@ -149,15 +149,15 @@
                     "products": [
                         {
                             "name": "tshirt_1",
-                            "text": "Camiseta 1",
-                            "cost": "50.000 COP",
-                            "imageRoute": "assets/images/subcat_tshirt.jpg"
+                            "text": "Camiseta blanca",
+                            "cost": "60.000 COP",
+                            "imageRoute": "assets/images/product_tshirt_1.jpg"
                         },
                         {
-                            "name": "tshirt_2",
-                            "text": "Camiseta 2",
+                            "name": "tshirt_3",
+                            "text": "Camiseta negra",
                             "cost": "60.000 COP",
-                            "imageRoute": "assets/images/subcat_tshirt.jpg"
+                            "imageRoute": "assets/images/product_tshirt_3.jpg"
                         }
                     ]
                 },
@@ -168,15 +168,21 @@
                     "products": [
                         {
                             "name": "jean_1",
-                            "text": "Jean 1",
+                            "text": "Jean clásico",
                             "cost": "80.000 COP",
-                            "imageRoute": "assets/images/subcat_jeans.jpg"
+                            "imageRoute": "assets/images/product_jean_1.jpg"
                         },
                         {
                             "name": "jean_2",
-                            "text": "Jean 2",
+                            "text": "Jean claro",
                             "cost": "90.000 COP",
-                            "imageRoute": "assets/images/subcat_jeans.jpg"
+                            "imageRoute": "assets/images//product_jean_2.jpg"
+                        },
+                        {
+                            "name": "jean_3",
+                            "text": "Jean oscuro",
+                            "cost": "75.000 COP",
+                            "imageRoute": "assets/images//product_jean_3.jpg"
                         }
                     ]
                 },

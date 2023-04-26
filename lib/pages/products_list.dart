@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:marketplace_flutter/foundations/app_colors.dart';
 import 'package:marketplace_flutter/widgets/product_card.dart';
 
-import '../foundations/shadows.dart';
+import 'product_detail.dart';
 
 class ProductsList extends StatelessWidget {
   final String subcategoryName;
@@ -36,7 +36,15 @@ class ProductsList extends StatelessWidget {
                   productName: products[index]["text"],
                   productCost: products[index]["cost"],
                   imageRoute: products[index]["imageRoute"],
-                  onTap: () => print(products[index]["text"]),
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => ProductDetail(
+                        productName: products[index]["text"],
+                        imageRoute: products[index]["imageRoute"],
+                        productCost: products[index]["cost"],
+                      ),
+                    ),
+                  ),
                 );
               },
             ),
