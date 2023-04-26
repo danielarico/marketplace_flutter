@@ -27,18 +27,7 @@ class ProductsList extends StatelessWidget {
       ),
       body: products.isEmpty
           ? Center(
-              child: Text(
-                emptyText,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: AppColors.BLACK,
-                  fontSize: emptyFontSize,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 2,
-                ),
-                overflow: TextOverflow.ellipsis,
-                maxLines: 2,
-              ),
+              child: _errorText(),
             )
           : ListView.builder(
               itemCount: products.length,
@@ -51,6 +40,21 @@ class ProductsList extends StatelessWidget {
                 );
               },
             ),
+    );
+  }
+
+  Widget _errorText() {
+    return Text(
+      emptyText,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        color: AppColors.BLACK,
+        fontSize: emptyFontSize,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 2,
+      ),
+      overflow: TextOverflow.ellipsis,
+      maxLines: 1,
     );
   }
 }
