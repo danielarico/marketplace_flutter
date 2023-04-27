@@ -8,6 +8,7 @@ class ProductDetail extends StatelessWidget {
   final String imageRoute;
   final String productCost;
   final String? description;
+  final String? sizes;
 
   const ProductDetail({
     super.key,
@@ -15,20 +16,26 @@ class ProductDetail extends StatelessWidget {
     required this.imageRoute,
     required this.productCost,
     this.description,
+    this.sizes,
   });
 
   final double imageOpacity = 1;
   final double cardHeight = 250;
   final double borderRadius = 5;
-  final double pagePadding = 25;
-  final double space = 25;
+  final double pagePadding = 30;
+  final double space = 30;
 
   final double titleFontSize = 22;
   final double textFontSize = 18;
 
+  final double buttonPercentage = 0.5;
+
   final String pageTitle = "Product detail";
-  final String defaultDescription = "No hay una descripción disponible.";
   final String buttonText = "Comprar";
+  final String sizesText = "Tallas disponibles";
+
+  final String defaultDescription = "No hay una descripción disponible.";
+  final String defaultSizes = "No hay una descripción disponible.";
 
   @override
   Widget build(BuildContext context) {
@@ -58,14 +65,20 @@ class ProductDetail extends StatelessWidget {
             SizedBox(height: space),
             _secondaryText(description ?? defaultDescription),
             SizedBox(height: space),
+            _mainText(sizesText),
+            SizedBox(height: space),
+            _secondaryText(sizes ?? defaultSizes),
+            SizedBox(height: space),
+            SizedBox(height: space),
             _mainText(productCost),
             SizedBox(height: space),
-            SizedBox(
-              // width: MediaQuery.of(context).size.width * 0.5,
-              width: 200,
-              child: PrimaryButton(
-                buttonText: buttonText,
-                onTap: () => print("Comprando"),
+            Center(
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width * buttonPercentage,
+                child: PrimaryButton(
+                  buttonText: buttonText,
+                  onTap: () => print("Comprando"),
+                ),
               ),
             ),
           ],
@@ -99,7 +112,6 @@ class ProductDetail extends StatelessWidget {
         fontWeight: FontWeight.w400,
         letterSpacing: 0.5,
       ),
-      overflow: TextOverflow.ellipsis,
     );
   }
 }

@@ -1,0 +1,12 @@
+{
+    "name": "shoes_1",
+    "text": "Zapatos 1",
+    "cost": "110.000 COP",
+    "imageRoute": "assets/images/subcat_shoes.jpg"
+},
+{
+    "name": "shoes_2",
+    "text": "Zapatos 2",
+    "cost": "90.000 COP",
+    "imageRoute": "assets/images/subcat_shoes.jpg"
+}

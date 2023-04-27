@@ -42,6 +42,8 @@ class ProductsList extends StatelessWidget {
                         productName: products[index]["text"],
                         imageRoute: products[index]["imageRoute"],
                         productCost: products[index]["cost"],
+                        description: products[index]["description"],
+                        sizes: products[index]["sizes"],
                       ),
                     ),
                   ),
