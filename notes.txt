@@ -10,3 +10,12 @@
     "cost": "90.000 COP",
     "imageRoute": "assets/images/subcat_shoes.jpg"
 }
+
+
+https://coolors.co/palettes/trending
+
+https://colorhunt.co/
+
+https://www.pexels.com/es-es/
+
+https://www.youtube.com/@weincode
