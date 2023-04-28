@@ -57,7 +57,10 @@ class Category extends StatelessWidget {
             child: Container(
               alignment: Alignment.center,
               margin: const EdgeInsets.all(10),
-              child: CardText(text: text),
+              child: CardText(
+                text: text,
+                align: TextAlign.center,
+              ),
             ),
           ),
         ),

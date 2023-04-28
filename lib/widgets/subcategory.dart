@@ -53,13 +53,15 @@ class Subcategory extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(contentPadding),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Expanded(
                   flex: 3,
                   child: Align(
                     alignment: Alignment.centerLeft,
-                    child: CardText(text: text),
+                    child: CardText(
+                      text: text,
+                      align: TextAlign.left,
+                    ),
                   ),
                 ),
                 Expanded(

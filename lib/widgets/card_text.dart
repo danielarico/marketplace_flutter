@@ -5,10 +5,12 @@ import '../foundations/shadows.dart';
 
 class CardText extends StatelessWidget {
   final String text;
+  final TextAlign align;
 
   const CardText({
     Key? key,
     required this.text,
+    this.align = TextAlign.center,
   }) : super(key: key);
 
   final double fontSize = 20;
@@ -17,7 +19,7 @@ class CardText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      textAlign: TextAlign.center,
+      textAlign: align,
       style: TextStyle(
         color: AppColors.WHITE,
         shadows: [Shadows.cardTextShadow],
