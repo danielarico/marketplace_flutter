@@ -12,10 +12,12 @@ class Categories extends StatelessWidget {
   });
 
   final String pageTitle = 'Marketplace';
-  final double pageMargin = 20;
+  final double pageMargin = 0;
 
   @override
   Widget build(BuildContext context) {
+    const double spacing = 40;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -27,8 +29,8 @@ class Categories extends StatelessWidget {
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 0.7,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
+          crossAxisSpacing: spacing,
+          mainAxisSpacing: spacing,
         ),
         itemCount: categories.length,
         itemBuilder: (BuildContext context, index) {

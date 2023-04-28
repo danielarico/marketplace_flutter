@@ -19,8 +19,8 @@ class ProductCard extends StatelessWidget {
 
   final double cardHeight = 180;
   final double cardFontSize = 18;
-  final Color cardFontColor = AppColors.PRIMARY_01;
-  final Color cardBackgroundColor = AppColors.WHITE;
+  final Color cardFontColor = Colors.brown; // AppColors.PRIMARY_01
+  final Color cardBackgroundColor = Colors.grey; // AppColors.WHITE
   final double cardMargin = 15;
   final double cardPadding = 6;
 

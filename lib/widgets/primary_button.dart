@@ -12,7 +12,8 @@ class PrimaryButton extends StatelessWidget {
   });
 
   final Color buttonFontColor = AppColors.WHITE;
-  final Color buttonBackground = AppColors.SECONDARY_01.withOpacity(0.95);
+  final Color buttonBackground =
+      AppColors.SECONDARY_01; // AppColors.SECONDARY_01
   final double buttonFontSize = 13;
   final double buttonRadius = 10;
 

@@ -17,9 +17,9 @@ class Category extends StatelessWidget {
   });
 
   final double cardHeight = 250;
-  final double borderRadius = 10;
-  final Color containerColor = AppColors.WHITE;
-  final double cardPadding = 4;
+  final double borderRadius = 0;
+  final Color containerColor = Colors.grey; // AppColors.WHITE
+  final double cardPadding = 0;
 
   final double imageOpacity = 0.75;
 

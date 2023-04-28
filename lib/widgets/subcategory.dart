@@ -18,10 +18,9 @@ class Subcategory extends StatelessWidget {
   });
 
   final double cardHeight = 180;
-  final double borderRadius = 5;
-  final double cardFontSize = 20;
-  final double cardMargin = 15;
-  final double cardPadding = 6;
+  final double borderRadius = 25;
+  final double cardMargin = 0;
+  final double cardPadding = 15;
   final double contentPadding = 25;
 
   final double imageOpacity = 0.75;
